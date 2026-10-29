@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akumar Distributor</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; margin-top: 40px; background-color: #f4f4f9; color: #333; }
+        .container { background: white; padding: 25px; border-radius: 12px; display: inline-block; box-shadow: 0px 4px 15px rgba(0,0,0,0.1); width: 85%; max-width: 340px; }
+        
+        /* 1. सबसे ऊपर आपका नाम बड़ा दिखेगा */
+        .merchant-title { font-weight: bold; color: #0288d1; font-size: 26px; text-transform: lowercase; margin-bottom: 20px; }
+        
+        /* 2. ज़ीरो फीस का संदेश सामने बड़ा दिखेगा */
+        .fee-box { font-size: 24px; font-weight: bold; color: #2e7d32; background-color: #e8f5e9; padding: 15px; border-radius: 8px; margin-bottom: 20px; border: 1px solid #c8e6c9; }
+        .fee-subtext { font-size: 13px; color: #555; font-weight: normal; margin-top: 5px; }
+        
+        /* 3. तय तारीख को पैसे कटना छोटे इंग्लिश अक्षरों में */
+        .schedule-text { font-size: 11px; color: #757575; font-family: 'Courier New', Courier, monospace; margin-top: 25px; text-align: center; letter-spacing: 0.5px; }
+        
+        .btn { display: block; padding: 14px 20px; background-color: #0288d1; color: white; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 16px; margin-top: 15px; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- आपका बड़ा नाम -->
+    <div class="merchant-title">akumar distributor</div>
+    
+    <!-- बड़ा ज़ीरो फीस संदेश -->
+    <div class="fee-box">
+        ₹0 FEES
+        <div class="fee-subtext">शून्य शुल्क ऑटो-डेबिट सेटअप</div>
+    </div>
+
+    <!-- मोबाइल पे बटन -->
+    <a class="btn" href="upi://pay?pa=8924030267@upi&pn=akumar%20distributor&tn=akumar%20distributor&am=0.00&cu=INR">
+        Approve Mandate
+    </a>
+
+    <!-- छोटे इंग्लिश अक्षरों में तय तारीख का विवरण -->
+    <div class="schedule-text">
+        scheduled: fixed amount will be debited on the fixed date automatically.
+    </div>
+</div>
+
+</body>
+</html>
